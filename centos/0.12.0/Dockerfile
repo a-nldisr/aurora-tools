@@ -28,9 +28,8 @@ RUN useradd -m -s /bin/bash -N -u ${AT_UID} ${AT_USER} && \
 COPY clusters.json ${HOME}/.aurora/clusters.json
 
 # Update the image. 
-RUN yum update -y
-
-# Install the aurora-tools rpm from the official bintray repository
-RUN yum install -y https://bintray.com/apache/aurora/download_file?file_path=centos-7%2Faurora-tools-${AURORA_VERSION}.el7.centos.aurora.x86_64.rpm
+RUN yum update -y && \
+    yum install -y https://bintray.com/apache/aurora/download_file?file_path=centos-7%2Faurora-tools-${AURORA_VERSION}.el7.centos.aurora.x86_64.rpm && \
+    yum clean all
 
 USER ${AT_USER}
