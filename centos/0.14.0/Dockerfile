@@ -15,7 +15,6 @@
 FROM centos:7.2.1511
 
 # Environments generating user and version.
-ENV HOME /aurora
 ENV AURORA_VERSION 0.14.0-1
 ENV AT_USER aurora
 ENV AT_UID 10141
@@ -37,4 +36,4 @@ RUN yum update -y && \
 
 USER ${AT_USER}
 
-WORKDIR ${HOME}/aurora/jobs
+WORKDIR ${HOME}/jobs
