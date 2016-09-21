@@ -36,3 +36,5 @@ RUN yum update -y && \
     yum clean all
 
 USER ${AT_USER}
+
+WORKDIR ${HOME}/aurora/jobs
