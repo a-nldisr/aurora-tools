@@ -1,7 +1,7 @@
-# aurora-tools
-Aurora tools is the client that can used to talk with Apache Aurora. The Aurora tools are contained in a Docker image, this makes switching between versions easy when you are working with several Aurora clusters running different versions. The goal of this project is to provide all official packaged versions of Apache Aurora from 0.12 for connecting to an Apache Aurora cluster.
+# Aurora-tools
+Aurora tools provides the client and admin tools for interfacing with Apache Aurora clusters. The official Apache Aurora tools provided on bintray are contained in this Docker image, this mainly is for the ease of switching between Apache Aurora versions when you are working with several Apache Aurora clusters which are running different versions. 
 
-You can use them in combination with some dotfiles   
+You can use them in combination with some dotfiles locally, example:  
 https://github.com/a-nldisr/dotfiles/blob/master/.dockerfunc
 
 The official Apache Aurora project can be found at: 
